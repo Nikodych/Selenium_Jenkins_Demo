@@ -10,8 +10,8 @@ public class SwitchTabsTest {
     public void testChrome(){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://google.com");
-        System.out.println("Chrome browser opened and navigated to Google site");
+        driver.get("http://52.37.0.203:8080/oms5");
+        System.out.println("Chrome browser opened and navigated to OMS site");
         driver.quit();
     }
 }
