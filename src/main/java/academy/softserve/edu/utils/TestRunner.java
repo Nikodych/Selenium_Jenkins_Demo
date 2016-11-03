@@ -4,6 +4,7 @@ import academy.softserve.edu.pageobjects.*;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -55,9 +56,14 @@ public class TestRunner {
 
 
 
-        driver = new FirefoxDriver();
+//        driver = new FirefoxDriver();
 
 //        System.setProperty("webdriver.firefox.bin", "src/main/resources/drivers/geckodriver");
+
+
+        driver = new ChromeDriver();
+
+        System.setProperty("webdriver.chrome.bin", "src/main/resources/drivers/chromedriver");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
