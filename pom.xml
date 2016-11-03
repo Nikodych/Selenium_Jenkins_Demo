@@ -10,6 +10,7 @@
         <skipTests>false</skipTests>
         <selenium-java.version>2.48.0</selenium-java.version>
         <testng.version>6.9.6</testng.version>
+        <suite>testng</suite>
     </properties>
 
     <build>
@@ -42,7 +43,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/main/resources/suites/${suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
