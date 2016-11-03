@@ -3,6 +3,7 @@ package academy.softserve.edu.utils;
 import academy.softserve.edu.pageobjects.*;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +11,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
 
@@ -51,7 +53,13 @@ public class TestRunner {
                 .window()
                 .maximize();*/
 
+
+
         driver = new FirefoxDriver();
+
+//        System.setProperty("webdriver.firefox.driver", "src/main/resources/drivers/geckodriver");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 
         driver.get("http://52.37.0.203:8080/oms5");
 
