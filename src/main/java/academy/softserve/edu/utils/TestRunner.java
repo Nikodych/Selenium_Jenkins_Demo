@@ -57,7 +57,7 @@ public class TestRunner {
 
         driver = new FirefoxDriver();
 
-//        System.setProperty("webdriver.firefox.driver", "src/main/resources/drivers/geckodriver");
+        System.setProperty("webdriver.firefox.bin", "src/main/resources/drivers/geckodriver");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
