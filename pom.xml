@@ -8,8 +8,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
-        <selenium-java.version>2.48.0</selenium-java.version>
-        <testng.version>6.9.6</testng.version>
+        <selenium-java.version>2.53.1</selenium-java.version>
+        <testng.version>6.9.10</testng.version>
+        <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
         <suite>testng</suite>
     </properties>
 
@@ -62,6 +63,12 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${selenium-firefox-driver.version}</version>
         </dependency>
 
     </dependencies>

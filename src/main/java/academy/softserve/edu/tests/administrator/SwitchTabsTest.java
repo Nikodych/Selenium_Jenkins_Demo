@@ -10,7 +10,7 @@ public class SwitchTabsTest {
     @Test
     public void testChrome(){
         /*System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");*/
-        System.setProperty("webdriver.firefox.driver", "src/main/resources/drivers/geckodriver");
+        /*System.setProperty("webdriver.firefox.driver", "src/main/resources/drivers/geckodriver");*/
         /*WebDriver driver = new ChromeDriver();*/
         WebDriver driver = new FirefoxDriver();
         driver.get("http://52.37.0.203:8080/oms5");
