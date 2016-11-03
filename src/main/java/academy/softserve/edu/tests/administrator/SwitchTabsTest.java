@@ -8,7 +8,7 @@ public class SwitchTabsTest {
 
     @Test
     public void testChrome(){
-        System.setProperty("webdriver.chrome.driver", "src//main//resources//drivers//chromedriver_linux\n");
+        System.setProperty("webdriver.chrome.driver", "src//main//resources//drivers//chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         System.out.println("Chrome browser opened and navigated to Google site");
