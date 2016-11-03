@@ -2,6 +2,7 @@ package academy.softserve.edu.tests.administrator;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class SwitchTabsTest {
@@ -10,7 +11,8 @@ public class SwitchTabsTest {
     public void testChrome(){
         /*System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver");*/
         System.setProperty("webdriver.firefox.driver", "src/main/resources/drivers/geckodriver");
-        WebDriver driver = new ChromeDriver();
+        /*WebDriver driver = new ChromeDriver();*/
+        WebDriver driver = new FirefoxDriver();
         driver.get("http://52.37.0.203:8080/oms5");
         System.out.println("Chrome browser opened and navigated to OMS site");
         driver.quit();
