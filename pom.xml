@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
         <selenium-java.version>2.53.1</selenium-java.version>
-        <testng.version>6.9.10</testng.version>
+        <testng.version>6.9.6</testng.version>
         <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
         <suite>testng</suite>
     </properties>
