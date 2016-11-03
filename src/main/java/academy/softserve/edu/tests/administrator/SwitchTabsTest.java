@@ -10,8 +10,8 @@ public class SwitchTabsTest {
     public void testChrome(){
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("http://bimarian.com");
-        System.out.println("Chrome browser opened and navigated to Bimarian site");
+        driver.get("https://google.com");
+        System.out.println("Chrome browser opened and navigated to Google site");
         driver.quit();
     }
 }
