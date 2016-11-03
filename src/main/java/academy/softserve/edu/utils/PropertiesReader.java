@@ -9,7 +9,7 @@ public final class PropertiesReader {
 
     }
 
-    private static final String CONFIG_PROPERTIES = "src/resources/config.properties";
+    private static final String CONFIG_PROPERTIES = "src/main/resources/config.properties";
 
     public static String getDefaultProperty(final String propertyName) {
 

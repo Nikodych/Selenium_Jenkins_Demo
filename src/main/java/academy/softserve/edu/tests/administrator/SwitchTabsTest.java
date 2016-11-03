@@ -14,9 +14,9 @@ public class SwitchTabsTest extends TestRunner {
     @Test
     final public void testSwitchingBetweenTabs() {
 
-        /*userInfoPage = logInPage.logInAs(Roles.ADMINISTRATOR);*/
+        userInfoPage = logInPage.logInAs(Roles.ADMINISTRATOR);
 
-        userInfoPage = logInPage.logInAs("iva", "qwerty");
+/*        userInfoPage = logInPage.logInAs("iva", "qwerty");*/
 
         assertThat(userInfoPage.getUserInfoFieldSet())
                 .isDisplayed();

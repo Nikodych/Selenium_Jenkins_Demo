@@ -31,6 +31,7 @@ public class WebDriverFactory {
 
         final String pathWebDriverChromeMac = PropertiesReader.getDefaultProperty("path.webdriver.chrome.mac");
         final String pathWebDriverChromeWin = PropertiesReader.getDefaultProperty("path.webdriver.chrome.win");
+        final String pathWebDriverChromeLinux = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
         final String pathWebDriverIe = PropertiesReader.getDefaultProperty("path.webdriver.ie");
 
         final String remoteWebDriverUrl = PropertiesReader.getDefaultProperty("remote.webdriver.url");
@@ -57,6 +58,11 @@ public class WebDriverFactory {
                         driver = new ChromeDriver();
                         break;
 
+                    case CHROME_LINUX:
+                        System.setProperty(webDriverChrome, pathWebDriverChromeLinux);
+                        driver = new ChromeDriver();
+                        break;
+
                     case EXPLORER:
                         System.setProperty(webDriverIe, pathWebDriverIe);
                         driver = new InternetExplorerDriver();
@@ -77,6 +83,11 @@ public class WebDriverFactory {
 
                     case CHROME:
                         System.setProperty(webDriverChrome, pathWebDriverChromeWin);
+                        driver = new ChromeDriver();
+                        break;
+
+                    case CHROME_LINUX:
+                        System.setProperty(webDriverChrome, pathWebDriverChromeLinux);
                         driver = new ChromeDriver();
                         break;
 

@@ -37,18 +37,18 @@ public class TestRunner {
     protected EditProductPage editProductPage;
     protected AddProductPage addProductPage;
 
-/*    @Parameters({"browser", "version"})*/
+    @Parameters({"browser", "version"})
     @BeforeMethod
-    public final void setUp(/*@Optional("default") final String browser,
-                            @Optional("46") final String version*/) throws MalformedURLException {
+    public final void setUp(@Optional("default") final String browser,
+                            @Optional("46") final String version) throws MalformedURLException {
 
-/*        final String logInPageUrl = PropertiesReader.getDefaultProperty("login.url");*/
+        final String logInPageUrl = PropertiesReader.getDefaultProperty("login.url");
 
-/*        final WebDriverFactory webDriverFactory = new WebDriverFactory();*/
+        final WebDriverFactory webDriverFactory = new WebDriverFactory();
 
-        /*webDriverFactory.setDriver(browser, version);*/
+        webDriverFactory.setDriver(browser, version);
 
-/*        driver = webDriverFactory.getDriver();*/
+        driver = webDriverFactory.getDriver();
 
 /*        driver.manage()
                 .window()
@@ -61,13 +61,15 @@ public class TestRunner {
 //        System.setProperty("webdriver.firefox.bin", "src/main/resources/drivers/geckodriver");
 
 
-        driver = new ChromeDriver();
+/*        driver = new ChromeDriver();
 
         System.setProperty("webdriver.chrome.bin", "src/main/resources/drivers/chromedriver");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
-        driver.get("http://52.37.0.203:8080/oms5");
+        driver.get("http://52.37.0.203:8080/oms5");*/
+
+        driver.get(logInPageUrl);
 
         logInPage = new LogInPage(driver);
     }
