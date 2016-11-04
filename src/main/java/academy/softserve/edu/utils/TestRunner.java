@@ -50,9 +50,9 @@ public class TestRunner {
 
         driver = webDriverFactory.getDriver();
 
-/*        driver.manage()
+        driver.manage()
                 .window()
-                .maximize();*/
+                .maximize();
 
 
 
