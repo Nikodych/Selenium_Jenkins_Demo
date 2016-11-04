@@ -18,7 +18,7 @@ public class WebDriverFactory {
     @Getter
     private WebDriver driver;
 
-    void setDriver(final String browser, final String version) throws MalformedURLException {
+    void setDriver(final String browser/*, final String version*/) throws MalformedURLException {
 
         final DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -111,7 +111,7 @@ public class WebDriverFactory {
                     .setBrowserName(String.valueOf(browser));
 
             capabilities
-                    .setVersion(version);
+                    .setVersion("version");
 
             driver = new RemoteWebDriver(new URL(remoteWebDriverUrl), capabilities);
         }

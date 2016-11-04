@@ -37,16 +37,16 @@ public class TestRunner {
     protected EditProductPage editProductPage;
     protected AddProductPage addProductPage;
 
-    @Parameters({"browser", "version"})
+    @Parameters({"browser"/*, "version"*/})
     @BeforeMethod
-    public final void setUp(@Optional("default") final String browser,
-                            @Optional("46") final String version) throws MalformedURLException {
+    public final void setUp(@Optional("default") final String browser/*,
+                            @Optional("46") final String version*/) throws MalformedURLException {
 
         final String logInPageUrl = PropertiesReader.getDefaultProperty("login.url");
 
         final WebDriverFactory webDriverFactory = new WebDriverFactory();
 
-        webDriverFactory.setDriver(browser, version);
+        webDriverFactory.setDriver(browser/*, version*/);
 
         driver = webDriverFactory.getDriver();
 
