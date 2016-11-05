@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LogIn Page Suite" parallel="none">
+    <test name="LogIn Page Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.LogInPageTest"/>
+        </classes>
+    </test> <!-- LogIn Page Test -->
+</suite> <!-- LogIn Page Suite -->
