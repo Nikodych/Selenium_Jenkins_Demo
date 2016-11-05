@@ -76,7 +76,9 @@
                     <reportsDirectory>${project.basedir}/test-output</reportsDirectory>
                     <workingDirectory>${project.basedir}</workingDirectory>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/main/resources/suites/${suite}.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>${basedir}/src/main/resources/suites/${suite}.xml</suiteXmlFile>-->
+                        <suiteXmlFile>${basedir}/src/main/resources/suites/switchtabstests.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/main/resources/suites/logintests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
