@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Switch Tabs Suite" parallel="none">
+    <test name="Switch Tabs Tests">
+        <classes>
+            <class name="academy.softserve.edu.tests.administrator.SwitchTabsTest"/>
+            <class name="academy.softserve.edu.tests.customer.SwitchTabsTest"/>
+            <class name="academy.softserve.edu.tests.merchandiser.SwitchTabsTest"/>
+            <class name="academy.softserve.edu.tests.supervisor.SwitchTabsTest"/>
+        </classes>
+    </test> <!-- Switch Tabs Tests -->
+</suite> <!-- Switch Tabs Suite -->
