@@ -9,9 +9,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
         <selenium-java.version>2.53.1</selenium-java.version>
-<!--        <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
-        <selenium-chrome-driver.version>2.53.1</selenium-chrome-driver.version>
-        <selenium-ie-driver.version>2.53.1</selenium-ie-driver.version>-->
+        <!--        <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
+                <selenium-chrome-driver.version>2.53.1</selenium-chrome-driver.version>
+                <selenium-ie-driver.version>2.53.1</selenium-ie-driver.version>-->
         <selenium-api.version>2.53.1</selenium-api.version>
         <selenium-support.version>2.53.1</selenium-support.version>
         <selenium-remote-driver.version>2.53.1</selenium-remote-driver.version>
@@ -77,9 +77,9 @@
                     <workingDirectory>${project.basedir}</workingDirectory>
                     <suiteXmlFiles>
                         <!--<suiteXmlFile>${basedir}/src/main/resources/suites/${suite}.xml</suiteXmlFile>-->
-                        <!--<suiteXmlFile>${basedir}/src/main/resources/suites/switchtabstests.xml</suiteXmlFile>-->
+                        <suiteXmlFile>${basedir}/src/main/resources/suites/switchtabstests.xml</suiteXmlFile>
                         <!--<suiteXmlFile>${basedir}/src/main/resources/suites/logintests.xml</suiteXmlFile>-->
-                        <suiteXmlFile>${basedir}/src/main/resources/suites/commontests.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>${basedir}/src/main/resources/suites/commontests.xml</suiteXmlFile>-->
                         <!--<suiteXmlFile>${basedir}/src/main/resources/suites/loginpagetest.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
@@ -101,23 +101,23 @@
             <version>${mysql-connector-java.version}</version>
         </dependency>
 
-<!--        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
-            <version>${selenium-firefox-driver.version}</version>
-        </dependency>
+        <!--        <dependency>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-firefox-driver</artifactId>
+                    <version>${selenium-firefox-driver.version}</version>
+                </dependency>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>${selenium-chrome-driver.version}</version>
-        </dependency>
+                <dependency>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-chrome-driver</artifactId>
+                    <version>${selenium-chrome-driver.version}</version>
+                </dependency>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-ie-driver</artifactId>
-            <version>${selenium-ie-driver.version}</version>
-        </dependency>-->
+                <dependency>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-ie-driver</artifactId>
+                    <version>${selenium-ie-driver.version}</version>
+                </dependency>-->
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
