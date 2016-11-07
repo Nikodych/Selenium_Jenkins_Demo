@@ -4,7 +4,6 @@
     <test name="Common Tests">
         <classes>
             <class name="academy.softserve.edu.tests.UserInfoDisplayedTest"/>
-            <class name="academy.softserve.edu.tests.UserInfoPageTest"/>
         </classes>
     </test> <!-- Common Tests -->
 </suite> <!-- Common Test Suite -->

@@ -5,8 +5,8 @@
         <classes>
             <class name="academy.softserve.edu.tests.administrator.SwitchTabsTest"/>
             <class name="academy.softserve.edu.tests.customer.SwitchTabsTest"/>
-            <class name="academy.softserve.edu.tests.merchandiser.SwitchTabsTest"/>
-            <class name="academy.softserve.edu.tests.supervisor.SwitchTabsTest"/>
+            <!--<class name="academy.softserve.edu.tests.merchandiser.SwitchTabsTest"/>-->
+            <!--<class name="academy.softserve.edu.tests.supervisor.SwitchTabsTest"/>-->
         </classes>
     </test> <!-- Switch Tabs Tests -->
 </suite> <!-- Switch Tabs Suite -->
