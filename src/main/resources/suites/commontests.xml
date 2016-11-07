@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Common Test Suite" parallel="none">
+    <test name="Common Tests">
+        <classes>
+            <class name="academy.softserve.edu.tests.UserInfoDisplayedTest"/>
+            <class name="academy.softserve.edu.tests.UserInfoPageTest"/>
+        </classes>
+    </test> <!-- Common Tests -->
+</suite> <!-- Common Test Suite -->

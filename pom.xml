@@ -79,7 +79,8 @@
                         <!--<suiteXmlFile>${basedir}/src/main/resources/suites/${suite}.xml</suiteXmlFile>-->
                         <suiteXmlFile>${basedir}/src/main/resources/suites/switchtabstests.xml</suiteXmlFile>
                         <suiteXmlFile>${basedir}/src/main/resources/suites/logintests.xml</suiteXmlFile>
-                        <suiteXmlFile>${basedir}/src/main/resources/suites/loginpagetest.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/main/resources/suites/commontests.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>${basedir}/src/main/resources/suites/loginpagetest.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
