@@ -6,7 +6,7 @@
             <!--<class name="academy.softserve.edu.tests.administrator.LogInLogOutTest"/>-->
             <!--<class name="academy.softserve.edu.tests.customer.LogInLogOutTest"/>-->
             <class name="academy.softserve.edu.tests.merchandiser.LogInLogOutTest"/>
-            <class name="academy.softserve.edu.tests.supervisor.LogInLogOutTest"/>
+            <!--<class name="academy.softserve.edu.tests.supervisor.LogInLogOutTest"/>-->
         </classes>
     </test> <!-- LogIn-LogOut Tests -->
 </suite> <!-- LogIn-LogOut Suite -->
