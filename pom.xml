@@ -64,7 +64,7 @@
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
-                            <value>false</value>    <!-- disabling default listeners is optional -->
+                            <value>false</value>
                         </property>
                         <property>
                             <name>listener</name>
